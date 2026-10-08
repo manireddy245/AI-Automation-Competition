@@ -15,6 +15,10 @@ Turn an event description in Google Sheets into a complete, shareable Google For
 5. **Add the questions.** An Iterator processes the questions array one item at a time. A Router sends each item to the Google Forms module configured for its question type.
 6. **Keep the intended question order.** The prompt returns questions in reverse order because each item is inserted at index `0`. The final form therefore displays questions in the intended order.
 
+## Run schedule
+
+The scenario is currently inactive because it was switched on for a test run. When activated, Make checks the sheet every 15 minutes and processes newly added event rows.
+
 ## Spreadsheet columns
 
 The sheet uses one row per event request:
